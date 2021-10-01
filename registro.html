@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <link rel="stylesheet" href="CSS\estilo.css">
+       <script src="./form.js"></script>
+       <title>Registro</title>
+   </head>
+   <body>
+       <!--  Opcion 1 de navegación  -->
+       <header>
+            <ul id="row">
+                <li><a href="index.html" id="enlace-navigation">Inicio</a></li>
+                <li><a href="registro.html" id="enlace-navigation">Registrarse</a></li>
+                <li style="float:right"><a class="active" href="https://github.com/Fuze7-11/Sprint-1" id="enlace-navigation">Github</a></li>
+            </ul>
+        </header>
+        <!--  Opcion 2 de navegación  -->
+       <!--<header>
+           <nav id="navigation">
+               <a href="index.html" id="enlace-navigation">Inicio</a>
+               <a href="#" id="enlace-navigation">Opcion 1</a>
+               <a href="#" id="enlace-navigation">Opcion 2</a>
+           </nav>
+       </header>-->
+       <div id="container2">
+            <div id="container-img">
+               <img style="background-color: aliceblue;" src="IMG\Registrate_ingreso.png" alt="Invitando a registrarse" width="100%" height="100%">
+            </div>
+            <div id="containe-form">
+                <form style="margin-left: 150%; margin-top: 80%;" id="form-registro" >
+                    <h1 id="registro">Registro</h1>
+                    <label for="campo">Nombre</label>
+                    <input id="nombre" name="nombre"  type="text">
+                    <label for="campo">Apellidos</label>
+                    <input id="apellidos" name="apellidos" type="text">
+                    <label for="campo">Telefono</label>
+                    <input id="telefono" name="telefono" module.exports = checkTelefono; type="text">
+                    <label for="campo">Correo</label>
+                    <input id="correo" name="correo" type="text">
+                    <label for="campo">Contraseña</label>
+                    <input id="contrasena" name="contrasena" type="password">
+                     <!-- Propiedad que hace llenar obligatoriamente un campo = required="true" 
+                          Propiedad que hace llenar con numero solamente = pattern="[0-9]+"  -->
+                    <br>
+                    <input type="submit" id="btn-submit-form" value="Registrar">
+                </form>
+            </div>
+       </div>
+       <footer id="footer">
+        <h3 style="color: aliceblue;">Desarrollo de Sprint 1 - Grupo 5</h3>
+    </footer>
+   </body>
+</html>
