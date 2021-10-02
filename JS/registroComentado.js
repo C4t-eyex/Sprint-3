@@ -20,12 +20,6 @@ function agregarRegistro() {
     let newusuario = new usuario(nomHtml, apellHtml, telHtml, corHtml,contHtml);
     registros.push (newusuario);
 
-    // Aqui pueden intentar usar el byTag: https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName
-    // Miren como funciona ese metodo, capturen los inputs que tienen una buena idea
-    // de como se manejan las posicciones de esos
-    // meten los datos a un arreglo de objetos json para que lo puedan usar y se fua!
-    // Objetos json por aqui: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON
-    // Basicamente el arreglo de "registros" les quedaria algo como:
     // {
     //     "nombre": "Marta",
     //     "apellido": "Perez",
