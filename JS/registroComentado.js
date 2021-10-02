@@ -1,18 +1,25 @@
 //const { registros } = require("../Desktop/UPB/Ciclo 3/Github/Sprint/Sprint-3/JS/registro");
 
-globalThis.registros = [];
+//globalThis.registros = [];
+
+globalThis.registros = [
+    {nombre: 'juan', apellido: 'calle', telefono: '123456', correo: 'juan@gmail.com', contrasena: 'Password123'},
+    {nombre: 'Miguel', apellido: 'Torres', telefono: '123456', correo: 'miguel@gmail.com', contrasena: 'Password123'},
+    {nombre: 'Angel', apellido: 'Garces', telefono: '123456', correo: 'angel@hotmail.com', contrasena: 'Password123'},
+    {nombre: 'Carlos', apellido: 'Diaz', telefono: '123456', correo: 'carlos@gmail.com', contrasena: 'Password123'},
+];
 
 function agregarRegistro() {
-    function usuario(nombre,apellidos,telefono,correo,contrasena){
+    function usuario(nombre,apellido,telefono,correo,contrasena){
         this.nombre = nombre;
-        this.apellidos = apellidos;
+        this.apellido = apellido;
         this.telefono = telefono;
         this.correo = correo;
         this.contrasena = contrasena;
     }
 
     var nomHtml = document.getElementById("nombre").value;
-    var apellHtml = document.getElementById("apellidos").value;
+    var apellHtml = document.getElementById("apellido").value;
     var telHtml = document.getElementById("telefono").value;
     var corHtml = document.getElementById("correo").value;
     var contHtml = document.getElementById("contrasena").value;
@@ -67,8 +74,10 @@ function filtrarCorreo(arreglo){
     resultado = arreglo.filter(arreglo => filtroRegexp.test(arreglo.correo) === true);*/
 };
 
+ordenarArreglo(registros);
 
-module.exports.registros = registros;
+
+/*module.exports.registros = registros;
 module.exports.filtrarCorreo = filtrarCorreo;
 module.exports.ordenarArreglo = ordenarArreglo;
-module.exports.agregarRegistro =  agregarRegistro;
+module.exports.agregarRegistro =  agregarRegistro;*/
