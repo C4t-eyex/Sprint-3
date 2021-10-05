@@ -1,10 +1,10 @@
-/*document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("form-registro").addEventListener('submit', checkNombre); 
     document.getElementById("form-registro").addEventListener('submit', checkApellido); 
     document.getElementById("form-registro").addEventListener('submit', checkTelefono); 
     document.getElementById("form-registro").addEventListener('submit', checkCorreo);
     document.getElementById("form-registro").addEventListener('submit', checkContrasena);  
-  });*/
+  });
 
   function checkNombre(valor) {
     //valor.preventDefault();
@@ -98,7 +98,7 @@
     }
     return true;
   }
-
+/*
 module.exports={
     checkNombre,checkApellido,checkTelefono,checkCorreo,checkContrasena
-}
+}*/
